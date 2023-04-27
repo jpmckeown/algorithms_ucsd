@@ -1,0 +1,6 @@
+*.hs
+*.java
+*.kt
+*.rb
+*.cpp
+.DS_Store
