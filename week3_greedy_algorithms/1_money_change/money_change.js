@@ -1,5 +1,8 @@
 // must be pre-sorted with highest first
-const denominations = [25, 10, 5, 1];
+// const denominations = [25, 10, 5, 1];
+
+// greedy algorithm can fail e.g. give 8 change using
+const denominations = [6, 4, 1];
 
 
 function minimumNumberOfCoins(moneyChange) {
@@ -24,5 +27,5 @@ function getMinimumCoins(moneyChange) {
 }
 
 
-console.log(minimumNumberOfCoins(25));
-console.log(getMinimumCoins(25));
+console.log(minimumNumberOfCoins(8));
+console.log(getMinimumCoins(8));
