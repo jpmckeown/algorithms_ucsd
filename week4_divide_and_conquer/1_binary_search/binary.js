@@ -9,6 +9,8 @@ let arr = [
 arr.sort(function(a, b){return a - b});
 console.log(arr);
 
+var primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97];
+
 let mid, low, high;
 
 // recursive algorithm 
@@ -49,14 +51,14 @@ function binarySearchIterate(arr, low, high, seek) {
    return low - 1;
 }
 
+arr = primes;
 low = 0;
 high = arr.length - 1;
-let seek = 11;
+let seek = 42;
 
 // let result = binarySearch(arr, 0, arr.length - 1, 9);
 let result = binarySearchIterate(arr, low, high, seek);
-console.log(arr[result], 'Index', result
-);
+console.log(arr[result], 'Index', result);
 
 // let arr = [];
 // while (arr.length < 40) {
